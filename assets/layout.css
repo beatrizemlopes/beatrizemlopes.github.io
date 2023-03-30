@@ -1,12 +1,25 @@
-header {
-    background-color:#ffc0cb;
-    height: 50px;
-}
-main {
-    background-color:#add8e6;
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+    height: 100%;
 }
 
-footer {
-    background-color:#90ee90;
-    height: 50px;
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: inherit;
+    background-color:#add8e6;
+    height: 90vh;
+    width: 100%;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
 }
