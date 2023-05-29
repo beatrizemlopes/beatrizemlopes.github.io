@@ -1,12 +1,38 @@
 header {
     display: flex;
-    justify-content: center;
-    align-items: top;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
     background-color: $background-color;
     height: rem(50);
+    width: 100%;
     text-align: top;
 }
 
 h1 {
     @include textSmall;
+}
+
+a {
+    @include textSmall;
+    text-decoration: none;
+    &.hover {
+        text-decoration: underline;}
+}
+
+ul {
+    align-items: flex-end;
+    height: 3.125rem;
+}
+
+li {
+    @include textSmall;
+    display: inline;
+    a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        &.active {
+            text-decoration: underline;}
+        }
 }
