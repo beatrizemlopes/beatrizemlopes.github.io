@@ -11,18 +11,55 @@ body {
   background-color: $background-color;
   }
 
-p {
-  @include textMedium;
-  line-height: 1.4;
-  text-align: center;
-  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 20px;
 
-h2 {
+    @media (min-width: $large) {
+    grid-template-columns: repeat(12,1fr);
+    column-gap: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 20px;
+      }
+}
+
+.me {
+  grid-column: 2/12;
+  grid-row: 1;
+}
+
+h1 {
   @include textHuge;
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-      }
+}
+
+h2 {
+  @include textMedium;
+  margin: 0;
+  text-align: left;
+}
+
+p {
+  @include textMedium;
+  line-height: 1.4;
+  text-align: center;
+  }x
+
+p.body {
+   @include textBody;
+  line-height: 1.4;
+  text-align: left;
+  }
+
 
       header,
       footer {
@@ -43,32 +80,12 @@ h2 {
 
     img {
         max-width: 100%;
-        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-      .column {
-        background: #90ee90;
-      }
-      .column:not(:last-child) {
-        margin-bottom: 30px;
-      }
-      @media (min-width: 850px) {
-        .flex-grid {
-          display: flex;
-          flex-direction: row;
-          column-gap: 30px;
-        }
-        .column {
-          width: 33.33%;
-        }
-        .column:not(:last-child) {
-          margin-bottom: 0;
-        }
-      }
 
       main {
         flex-grow: 1;

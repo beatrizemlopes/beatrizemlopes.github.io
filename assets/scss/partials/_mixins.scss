@@ -1,12 +1,18 @@
 @mixin textSmall {
     font-family: "CircularStd", Verdana, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
     text-transform: uppercase;
   }
 
-@mixin textMedium {
+@mixin textBody {
     font-family: "CircularStd", Verdana, sans-serif;
+    font-size: 20px;
+    color: #fff;
+  }
+
+@mixin textMedium {
+    font-family: "CircularStd-Book", Verdana, sans-serif;
     font-size: 24px;
     color:#fff;
   }
@@ -21,4 +27,8 @@
     font-family: "CircularStd-Bold", Geneva, Verdana, sans-serif;
     font-size: 96px;
     color:#fff;
+
+    @media (min-width: $large) {
+      font-size: 160px;
+      }
   }
