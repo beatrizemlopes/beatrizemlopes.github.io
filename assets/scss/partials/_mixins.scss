@@ -18,17 +18,17 @@
   }
 
 @mixin textLarge {
-    font-family: "CircularStd", Geneva, Verdana, sans-serif;
+    font-family: "CircularStd-Medium", Geneva, Verdana, sans-serif;
     font-size: 32px;
     color:#fff;
   }
 
 @mixin textHuge {
     font-family: "CircularStd-Bold", Geneva, Verdana, sans-serif;
-    font-size: 96px;
+    font-size: 100px;
     color:#fff;
 
-    @media (min-width: $large) {
+    @media (min-width: $medium) {
       font-size: 160px;
       }
   }
