@@ -83,9 +83,14 @@ p.header {
     a {
         @include textLarge;
         text-decoration: none;
+        color: $text-color;
 
         &.hover {
             text-decoration: underline;
+        }
+
+        &.visited {
+            color: $text-color;
         }
     }
 

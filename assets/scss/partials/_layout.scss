@@ -11,8 +11,10 @@ body {
   margin: 0;
   min-height: 100vh;
   background-color: $background-color;
+
   &.no-scroll {
-    overflow-y: hidden;;
+    overflow-y: hidden;
+    ;
   }
 }
 
@@ -22,7 +24,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 30px 20px;
+  padding: 50px 20px;
   max-width: 540px;
   margin: 0 auto;
 
@@ -35,6 +37,10 @@ main {
     max-width: 1130px;
   }
 
+}
+
+article {
+  padding-bottom: 40px;
 }
 
 .title-home {
@@ -51,7 +57,7 @@ main {
   width: fit-content;
   height: fit-content;
 
-  grid-column: 1/4;
+  grid-column: 1/5;
 }
 
 .text-me {
@@ -137,7 +143,44 @@ img {
   display: grid;
   flex-direction: column;
   align-items: flex-start;
-  
+}
+
+h4 {
+  @include textLabel;
+  margin: 0;
+  text-align: left;
+}
+
+.bookCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  gap: 30px;
+
+  figure {
+    display: block;
+    height: 40vh;
+
+    img {
+      object-fit: contain;
+      filter: drop-shadow(-8px 7px 12px rgba(0, 0, 0, 0.25));
+      transform: rotate(-5.16deg);
+    }
+  }
+}
+
+.bookTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 15px;
+  grid-column: 1/5;
+
+  border: 1px solid #fff;
+  border-radius: 93px;
 }
 
 /* WORK PAGE */
@@ -152,7 +195,7 @@ img {
   gap: 20px;
   padding-bottom: 30px;
 
-  border-top-style:solid;
+  border-top-style: solid;
   border-top-color: #fff;
 }
 
@@ -242,4 +285,13 @@ img {
 
 a.projects {
   @include textLarge;
+}
+
+/* CONTACT PAGE */
+
+h1.contacts {
+  @include textLarge;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
 }
