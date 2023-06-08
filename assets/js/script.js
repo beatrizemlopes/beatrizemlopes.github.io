@@ -16,3 +16,9 @@ function toggleMenu() {
     document.body.classList.toggle("no-scroll");
 }
 btnToggleMenu.addEventListener("click", toggleMenu);
+
+$(document).ready(function(){
+	$('#nav-icon').click(function(){
+		$(this).toggleClass('open');
+	});
+});

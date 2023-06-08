@@ -11,6 +11,12 @@
   color: #fff;
 }
 
+@mixin textButton {
+  font-family: "CircularStd-Book", Verdana, sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
 @mixin textBody {
   font-family: "CircularStd-Book", Verdana, sans-serif;
   font-size: 20px;
@@ -29,9 +35,15 @@
   color: #fff;
 }
 
+@mixin textLarge2 {
+  font-family: "CircularStd-Medium", Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  color: #fff;
+}
+
 @mixin textHuge {
   font-family: "CircularStd-Bold", Geneva, Verdana, sans-serif;
-  font-size: 100px;
+  font-size: 90px;
   color: #fff;
 
   @media (min-width: $medium) {

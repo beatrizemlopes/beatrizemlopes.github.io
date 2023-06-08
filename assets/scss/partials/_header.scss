@@ -4,6 +4,7 @@ header {
     width: 100%;
     margin: 0;
     padding: 0;
+    z-index: 1;
 }
 
 #header-container {
@@ -31,10 +32,6 @@ p.header {
 
     @media (min-width: $medium) {
         display: none;
-    }
-
-    svg {
-        stroke: #fff;
     }
 }
 
