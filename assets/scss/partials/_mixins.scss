@@ -9,6 +9,10 @@
   font-family: "CircularStd-Book", Verdana, sans-serif;
   font-size: 14px;
   color: #fff;
+
+  @media (min-width: $medium) {
+    font-size: 18px;
+  }
 }
 
 @mixin textButton {

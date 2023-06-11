@@ -1,5 +1,17 @@
 @import "grid";
 
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: $secondary-color;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -48,9 +60,10 @@ article {
 }
 
 .title {
-  text-align: center;
-  width: fit-content;
+  text-align: left;
   height: fit-content;
+  border-bottom-style: solid;
+  border-bottom-color: $text-color;
 
   grid-column: 1/5;
 
@@ -194,8 +207,8 @@ h4 {
   gap: 30px;
   padding-bottom: 30px;
 
-  border-top-style: solid;
-  border-top-color: $primary-color;
+  /*border-top-style: solid;
+  border-top-color: $primary-color;*/
 
   @media (min-width: $medium) {
     grid-column: 1/13;
@@ -358,7 +371,8 @@ div.contacts {
   }
 
   a {
-    @include textBody;
+    @include textLabel;
+    color:$terciary-color;
     text-transform: uppercase;
   }
 
